@@ -1,11 +1,17 @@
 % interactapasample.tex
 % v1.05 - August 2017
+% CaGIS version v1.05.1 - February 2023
+% - altered to label figure parts as a) correctly
 
 \documentclass[]{interact}
 
 \usepackage{epstopdf}% To incorporate .eps illustrations using PDFLaTeX, etc.
 \usepackage[caption=false]{subfig}% Support for small, `sub' figures and tables
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=simple}
+\renewcommand\thesubfigure{\alph{subfigure})}
 %\usepackage[nolists,tablesfirst]{endfloat}% To `separate' figures and tables from text if required
+
 %\usepackage[doublespacing]{setspace}% To produce a `double spaced' document if required
 %\setlength\parindent{24pt}% To increase paragraph indentation when line spacing is doubled
 
