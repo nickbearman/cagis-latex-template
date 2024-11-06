@@ -2,6 +2,10 @@
 
 LaTeX template for the CaGIS Journal (Cartography and Geographic Information Science Journal). 
 
+The source file is `interactapasample.tex`
+
+The compiled PDF is `interactapasample.pdf`
+
 You can also view this template on [Overleaf](https://www.overleaf.com/read/bfrpdtgtmssd#327cc0). 
 
 This is based on the [Taylor & Francis LATEX template for authors (Interact layout +
