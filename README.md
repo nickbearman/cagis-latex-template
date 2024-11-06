@@ -11,4 +11,4 @@ Any questions, please contact me.
 
 Nick Bearman
 CaGIS Cartographic Editor
-nick@geospatialtrainingsolutions.co.uk
+nick@nickbearman.com
