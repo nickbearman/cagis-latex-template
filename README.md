@@ -2,6 +2,8 @@
 
 LaTeX template for the CaGIS Journal (Cartography and Geographic Information Science Journal). 
 
+You can also view this template on [Overleaf](https://www.overleaf.com/read/bfrpdtgtmssd#327cc0). 
+
 This is based on the [Taylor & Francis LATEX template for authors (Interact layout +
 American Psychological Association reference style)](https://files.taylorandfrancis.com/InteractAPALaTeX.zip) with changes for CaGIS styling. 
 
