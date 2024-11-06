@@ -1,9 +1,13 @@
 % interactapasample.tex
 % v1.05 - August 2017
-% CaGIS version v1.05.1 - February 2023
+% CaGIS version v1.05.2 - November 2024
 % - altered to label figure parts as a) correctly
 
 \documentclass[]{interact}
+
+%\usepackage{environ}  %- use to remove figs from rendering
+%\RenewEnviron{figure}{}% Gobble figure environment  - use to remove figs from rendering
+%\RenewEnviron{table}{}% Gobble table environment - use to remove figs from rendering
 
 \usepackage{epstopdf}% To incorporate .eps illustrations using PDFLaTeX, etc.
 \usepackage[caption=false]{subfig}% Support for small, `sub' figures and tables
@@ -62,7 +66,7 @@ Sections; lists; figures; tables; mathematics; fonts; references; appendices
 
 A number of alterations have been made to the original Taylor \& Francis LaTeX template to provide compatibility with the CaGIS Style Guidelines at https://files.taylorandfrancis.com/tcag-cagis-guide.pdf. 
 
-It is worth mentioning that this LaTeX template is a work in progress. Please do contribute any suggestions to https://github.com/nickbearman/cagis-latex-template or email nick@nickbearman.com. 
+It is worth mentioning that this LaTeX template is a work in progress. Please do contribute any suggestions to the https://github.com/nickbearman/cagis-latex-template or email nick@nickbearman.com. The version on GitHub may be more up to date than the version on the Taylor and Francis website. 
 
 Specifically I would like to draw your attention to \textit{tables} and \textit{figures}.
 
@@ -80,6 +84,21 @@ We ask for files in TIF or EPS format. Unfortunately TIF files are not compatibl
 \end{figure}
 
 You should be able to refer to figures in text, see Figure \ref{fig:framework}. This is from Yao (2024), at https://doi.org/10.1080/15230406.2024.2352534. 
+
+\subsection{Figure rendering}
+
+We ask you to include \texttt{--- Figure 1 about here ---} to indicate roughly in the document where you would like your figure to be placed. 
+
+
+
+\texttt{--- Figure 1 about here ---}
+
+
+
+We also ask you not to include the figures in the document itself. However, this means in LaTeX Figure 1 is replaced with Figure ??? which isn't very helpful! So for LaTeX, please include your figures so we have the references working. 
+
+If you know how to get this working, please let us know!
+
 
 \subsection{Figures with parts}
 
