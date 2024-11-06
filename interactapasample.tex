@@ -41,11 +41,11 @@
 
 \articletype{ARTICLE TEMPLATE}% Specify the article type or omit as appropriate
 
-\title{Taylor \& Francis \LaTeX\ template for authors (\textsf{Interact} layout + American Psychological Association reference style)}
+\title{CaGIS Taylor \& Francis \LaTeX\ template for authors (\textsf{Interact} layout + American Psychological Association reference style)}
 
 \author{
-\name{A.~N. Author\textsuperscript{a}\thanks{CONTACT A.~N. Author. Email: latex.helpdesk@tandf.co.uk} and John Smith\textsuperscript{b}}
-\affil{\textsuperscript{a}Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK; \textsuperscript{b}Institut f\"{u}r Informatik, Albert-Ludwigs-Universit\"{a}t, Freiburg, Germany}
+\name{A.~N. Author\textsuperscript{a}\thanks{CONTACT A.~N. Author. Email: latex.helpdesk@tandf.co.uk}, John Smith\textsuperscript{b} and Nick Bearman\textsuperscript{c}}
+\affil{\textsuperscript{a}Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK; \textsuperscript{b}Institut f\"{u}r Informatik, Albert-Ludwigs-Universit\"{a}t, Freiburg, Germany; \textsuperscript{c}CaGIS Cartographic Editor, Cartography and Geographic Information Society}
 }
 
 \maketitle
@@ -58,6 +58,63 @@ This template is for authors who are preparing a manuscript for a Taylor \& Fran
 Sections; lists; figures; tables; mathematics; fonts; references; appendices
 \end{keywords}
 
+\section{Additions for CaGIS Style Guidelines}
+
+A number of alterations have been made to the original Taylor \& Francis LaTeX template to provide compatibility with the CaGIS Style Guidelines at https://files.taylorandfrancis.com/tcag-cagis-guide.pdf. 
+
+It is worth mentioning that this LaTeX template is a work in progress. Please do contribute any suggestions to https://github.com/nickbearman/cagis-latex-template or email nick@nickbearman.com. 
+
+Specifically I would like to draw your attention to \textit{tables} and \textit{figures}.
+
+\newpage
+
+\subsection{Figures}
+
+We ask for files in TIF or EPS format. Unfortunately TIF files are not compatible with LaTeX, but you are welcome to include an alternative format (e.g. .JPG or .PNG) alongside your TIF format. For example, we have included \texttt{Figure1.tif} as well as \texttt{Figure1.jpg} in this example. The JPG is used in the LaTeX and the TIF will be used in the production of the article. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figure1.jpg}
+    \caption{Locations of AutoCarto symposia from 1974 to 2022.}
+    \label{fig:framework}
+\end{figure}
+
+You should be able to refer to figures in text, see Figure \ref{fig:framework}. This is from Yao (2024), at https://doi.org/10.1080/15230406.2024.2352534. 
+
+\subsection{Figures with parts}
+
+Some figures may also have parts. We ask you to refer to these as Figure 2a) and Figure 2b). The labels a) and b) should appear on the figure itself.  
+
+Using the LaTeX figure numbering will only allow you to say see Figure \ref{fig:grids}.  
+
+To reference individual parts, you will need to do this manually, for example, see Figure \ref{fig:grids}b). 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Beatrice-Vaienti_Figure_03.png}
+    \caption{a) The regular grid and the displacement vectors for the two maps. b) The deformed grids resulting from an RBF interpolation of the displacement vectors. c) The grids are cropped to the common extent. \textit{From Exploring Cartographic Genealogies through Deformation Analysis: Case Studies on Ancient Maps and Synthetic Data, to be published.}}
+    \label{fig:grids}
+\end{figure}
+
+We ask that you use the format b), rather than B), (B), (b) or any other variation. This is to ensure consistency across articles within the journal. 
+
+If you know of another approach of achieving this in LaTeX, please let us know. 
+
+\subsection{Tables}
+
+Taylor \& Francis require Tables to be provided as a separate file, ideally in Excel or Word format. You can use tools like TableConvert.com to take your LaTeX table and convert it to a CSV file, which is fine for submissions. 
+
+\begin{table}
+\tbl{Example of a table.}
+{\begin{tabular}{lcccccc} \toprule
+& \multicolumn{2}{l}{Type} \\ \cmidrule{2-7}
+Class & One & Two & Three & Four & Five & Six \\ \midrule
+Alpha & A1 & A2 & A3 & A4 & A5 & A6 \\
+Beta & B2 & B2 & B3 & B4 & B5 & B6 \\
+Gamma & C2 & C2 & C3 & C4 & C5 & C6 \\ \bottomrule
+\end{tabular}}
+\label{sample-table2}
+\end{table}
 
 \section{Introduction}
 
@@ -66,7 +123,6 @@ In order to assist authors in the process of preparing a manuscript for a journa
 Commands that differ from or are provided in addition to standard \LaTeXe\ are described in this document, which is \emph{not} a substitute for a \LaTeXe\ tutorial.
 
 The \texttt{interactapasample.tex} file can be used as a template for a manuscript by cutting, pasting, inserting and deleting text as appropriate, using the preamble and the \LaTeX\ environments provided (e.g.\ \verb"\begin{abstract}", \verb"\begin{keywords}").
-
 
 \subsection{The \textsf{Interact} class file}\label{class}
 
