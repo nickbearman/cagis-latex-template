@@ -1,7 +1,8 @@
 % interactapasample.tex
 % v1.05 - August 2017
-% CaGIS version v1.05.2 - November 2024
+% CaGIS version v1.05.3 - May 2025
 % - altered to label figure parts as a) correctly
+% - use \vspace{1\baselineskip} to add space before --- Figure 1 about here ---
 
 \documentclass[]{interact}
 
@@ -48,7 +49,7 @@
 \title{CaGIS Taylor \& Francis \LaTeX\ template for authors (\textsf{Interact} layout + American Psychological Association reference style)}
 
 \author{
-\name{A.~N. Author\textsuperscript{a}\thanks{CONTACT A.~N. Author. Email: latex.helpdesk@tandf.co.uk}, John Smith\textsuperscript{b} and Nick Bearman\textsuperscript{c}}
+\name{A.~N. Author\textsuperscript{a}\thanks{CONTACT A.~N. Author. Email: latex.helpdesk@tandf.co.uk, Nick Bearman Email: nick@nickbearman.com}, John Smith\textsuperscript{b} and Nick Bearman\textsuperscript{c}}
 \affil{\textsuperscript{a}Taylor \& Francis, 4 Park Square, Milton Park, Abingdon, UK; \textsuperscript{b}Institut f\"{u}r Informatik, Albert-Ludwigs-Universit\"{a}t, Freiburg, Germany; \textsuperscript{c}CaGIS Cartographic Editor, Cartography and Geographic Information Society}
 }
 
@@ -64,17 +65,17 @@ Sections; lists; figures; tables; mathematics; fonts; references; appendices
 
 \section{Additions for CaGIS Style Guidelines}
 
-A number of alterations have been made to the original Taylor \& Francis LaTeX template to provide compatibility with the CaGIS Style Guidelines at https://files.taylorandfrancis.com/tcag-cagis-guide.pdf. 
+Several alterations have been made to the original Taylor \& Francis LaTeX template to provide compatibility with the CaGIS Style Guidelines at https://files.taylorandfrancis.com/tcag-cagis-guide.pdf. 
 
-It is worth mentioning that this LaTeX template is a work in progress. Please do contribute any suggestions to the https://github.com/nickbearman/cagis-latex-template or email nick@nickbearman.com. The version on GitHub may be more up to date than the version on the Taylor and Francis website. 
+It is worth mentioning that this LaTeX template is a work in progress. Please do contribute any suggestions to the https://github.com/nickbearman/cagis-latex-template or email nick@nickbearman.com. The version on GitHub may be more up-to-date than the version on the Taylor and Francis website. 
 
-Specifically I would like to draw your attention to \textit{tables} and \textit{figures}.
+Specifically, I would like to draw your attention to \textit{tables} and \textit{figures}.
 
 \newpage
 
 \subsection{Figures}
 
-We ask for files in TIF or EPS format. Unfortunately TIF files are not compatible with LaTeX, but you are welcome to include an alternative format (e.g. .JPG or .PNG) alongside your TIF format. For example, we have included \texttt{Figure1.tif} as well as \texttt{Figure1.jpg} in this example. The JPG is used in the LaTeX and the TIF will be used in the production of the article. 
+We ask for files in TIF or EPS format. Unfortunately, TIF files are not compatible with LaTeX, but you are welcome to include an alternative format (e.g. .JPG or .PNG) alongside your TIF format. For example, we have included \texttt{Figure1.tif} as well as \texttt{Figure1.jpg} in this example. The JPG is used in the LaTeX and the TIF will be used in the production of the article. 
 
 \begin{figure}[h]
     \centering
@@ -83,11 +84,11 @@ We ask for files in TIF or EPS format. Unfortunately TIF files are not compatibl
     \label{fig:framework}
 \end{figure}
 
-You should be able to refer to figures in text, see Figure \ref{fig:framework}. This example figure is from Yao (2024), at https://doi.org/10.1080/15230406.2024.2352534. 
+You should be able to refer to figures in text, see Figure \ref{fig:framework}. \textit{This example figure is from Yao (2024), at https://doi.org/10.1080/15230406.2024.2352534.} 
 
 \subsection{Figure rendering}
 
-We ask you to include \texttt{--- Figure 1 about here ---} to indicate roughly in the document where you would like your figure to be placed. 
+We ask you to include \texttt{--- Figure 1 about here ---} to indicate roughly in the document where you would like your figure to be placed, like this:
 
 \vspace{1\baselineskip}
 \texttt{--- Figure 1 about here ---} 
@@ -99,7 +100,7 @@ As well as typing the figure number manually, you can also use the tag if you pr
 \texttt{---Figure \ref{fig:framework} near here ---} 
 \\
 
-If you have any comments on making this process clearer, please do let Nick know, or submit a PR to this repository. 
+If you have any comments on making this process clearer, please do let Nick know, or submit a PR to this repository at https://github.com/nickbearman/cagis-latex-template. 
 
 \subsection{Figures with parts}
 
@@ -107,18 +108,20 @@ Some figures may also have parts. We ask you to refer to these as Figure 2a) and
 
 Using the LaTeX figure numbering will only allow you to say see Figure \ref{fig:grids}.  
 
-To reference individual parts, you will need to do this manually, for example, see Figure \ref{fig:grids}b). 
+To reference individual parts, you will need to do this manually; for example, see Figure \ref{fig:grids}b). 
 
-If you know of another approach of achieving this in LaTeX, please let us know. 
+If you know of another way for achieving this in LaTeX, please let us know. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{Beatrice-Vaienti_Figure_03.png}
-    \caption{a) The regular grid and the displacement vectors for the two maps. b) The deformed grids resulting from an RBF interpolation of the displacement vectors. c) The grids are cropped to the common extent. \textit{From Exploring Cartographic Genealogies through Deformation Analysis: Case Studies on Ancient Maps and Synthetic Data, to be published.}}
+    \caption{a) The regular grid and the displacement vectors for the two maps. b) The deformed grids resulting from an RBF interpolation of the displacement vectors. c) The grids are cropped to the common extent. \textit{From Vaienti et al. (2024), https://doi.org/10.1080/15230406.2024.2424891.}}
     \label{fig:grids}
 \end{figure}
 
 We ask that you use the format b), rather than B), (B), (b) or any other variation. This is to ensure consistency across articles within the journal. 
+
+\vspace{1\baselineskip}
 
 Finally, if you wish to reference figure parts in brackets, please use these styles:
 
@@ -128,7 +131,7 @@ Finally, if you wish to reference figure parts in brackets, please use these sty
   \item Grids are also an important part of GIS (see Figure \ref{fig:grids}). 
   \item Grids are also an important part of GIS (see Figure \ref{fig:grids}a).   
   \item Grids are also an important part of GIS (see Figure \ref{fig:grids}a) \& b).   
-  \item Grids are also an important part of GIS (see Figure \ref{fig:grids}a) - c).   
+  \item Grids are also an important part of GIS (see Figures \ref{fig:grids}a) - c).   
 \end{itemize}
 
 \subsection{Tables}
