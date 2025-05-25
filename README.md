@@ -13,7 +13,7 @@ American Psychological Association reference style)](https://files.taylorandfran
 
 This template is stored on https://github.com/nickbearman/cagis-latex-template. 
 
-This is Cagis version v1.05.3 - May 2025, based on Interact Sample v1.05 - August 2017. 
+This is CaGIS version v1.05.3 - May 2025, based on Interact Sample v1.05 - August 2017. 
 
 Comments, improvements and PRs welcome!
 
